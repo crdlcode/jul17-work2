@@ -15,15 +15,15 @@ end
 #compare records
 def compare_records(speed1, speed2, speed3)
   if speed3 > speed2 && speed3 > speed1
-    puts "Person 3 was the fastest at #{speed3} m/s"
+    return "Person 3 was the fastest at #{speed3} m/s"
   elsif speed2 > speed3 && speed2 > speed1
-    puts "Person 2 was the fastest at #{speed2} m/s"
+    return "Person 2 was the fastest at #{speed2} m/s"
   elsif speed1 > speed3 && speed1 > speed2
-    puts "Person 1 was the fastest at #{speed1} m/s"
+    return "Person 1 was the fastest at #{speed1} m/s"
   elsif speed1 == speed2 && speed2 == speed3
-    puts "Everyone tied at #{speed1} m/s"
+    return "Everyone tied at #{speed1} m/s"
   else
-    puts "Well done everyone!"
+    return "Well done everyone!"
   end
 end
 
